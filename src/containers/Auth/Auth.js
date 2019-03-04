@@ -68,12 +68,10 @@ class Auth extends Component {
             const pattern = /^\d+$/;
             isValid = pattern.test( value ) && isValid
         }
-        console.log(isValid)
         return isValid;
     }
 
     inputChangedHandler = ( event, controlName ) => {
-        console.log(controlName);
         const updatedControls = {
             ...this.state.controls,
             [controlName]: {
